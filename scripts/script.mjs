@@ -30,12 +30,15 @@ var menuLinks = [
     { text: 'account', href: '/account' },
   ];
 
-  function links (link) {
-    for (i = 0; i < menuLinks.length; i++) {
-        if menuLinks != 
-        menuLinks.createElement("<a></a>");
-        menuLinks.setAttribute("href", href);
-        menuLinks.textContent = menuLinks.text;
-        topMenuEl.append(menuLinks);
-    }
-  }
+
+menuLinks.forEach(function(link) {
+  let a = document.createElement("a");
+  a.href = link.href;
+  a.innerText = link.text;
+  topMenuEl.appendChild(a);
+});
+
+// Part 4 -------------------------------------------
+console.log("Part 4 -----------------------------------")
+
+console.log("It looks like this doesn't actually have a fourth part? Please let me know if I misunderstood this!")
